@@ -1,0 +1,464 @@
+/* CORES 
+#FFFFFF BRANCO
+#FBF37C AMARELO
+#7F7F7F CINZA CLARO
+#58555A CINZA ESCURO
+#000000 PRETO
+*/
+
+/* FRASES 
+We refuse to acknowledge the problems of form, we only accept the problems of construction. Form is not the aim of our work, but only its result. The form does not exist by itself.
+*/
+*{
+    margin: 0%;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    animation-delay: 5ms;
+}
+
+.cabecalho {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+.cabecalho #logo {
+    width: 60%;
+}
+
+
+.cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho li {
+    font-size: 22px;
+    padding: 20px;
+    transition: all .2s ease-in-out;
+}
+.cabecalho li:hover {
+    color: #FBF37C;
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .cabecalho #logo {
+        width: 80px;
+    }
+    
+}
+/* SECTION HERO */
+.hero {
+    background-image: url(./src/hero.png.jpg);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+.hero h1 {
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.hero h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 30px;
+}
+.hero button {
+    background-color: #58555A;
+    color: white;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    opacity: 0.9;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.hero button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+    .hero {
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+    .hero h2 {
+        font-size: 16px;
+    }
+    .hero button {
+        font-size: 12px;
+        padding: 5px;
+        width: 100px;
+
+    }
+}
+
+
+.sobre {
+    background-color: white;
+    color: #58555A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre .quem-somos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px 50px;
+    align-items: center;
+
+}
+
+.sobre .quem-somos h1 {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.sobre .quem-somos p {
+    padding: 10px;
+}
+
+.sobre .quem-somos hr {
+    margin-top: 10px;
+    width: 400px;
+    color: black;
+}
+
+.sobre .valores {
+    margin-top: -30px;
+    display: flex;
+    flex: 1;
+    padding: 50px 10px;
+}
+
+.sobre .valores ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre .valores ul li {
+    margin-left: 20px;
+    border: #58555A solid 1px;
+    padding: 10px;
+    width: 33%;
+}
+
+.sobre .valores ul li:last-child {
+    margin-right: 20px;
+}
+
+.sobre .valores ul li i {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.sobre .valores ul li h1 {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.sobre .valores ul li p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    .sobre .valores {
+        padding: 10px;
+    }
+    .sobre .valores ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .sobre .valores ul li {
+        margin-right: 10px;
+        width: 280px;
+        margin-top: 10px;
+    }
+    .sobre .valores ul li:last-child {
+        margin-right: 10px;
+    }
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.projetos .section-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projetos .section-projetos h1 {
+    font-size: 32px;
+    padding: 10px;
+}
+
+.projetos .section-projetos hr {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.projetos .grid ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.projetos .grid ul li {
+    flex-basis: 23%;
+    height: 450px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    transition: all .2s ease-in-out;
+}
+
+.projetos .grid ul li:hover{
+    transform: scale(1.1);
+    flex-basis: 100%;
+}
+
+.projetos button {
+    background-color: #58555A;
+    color: white;
+    width: 180px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    opacity: 0.9;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+}
+
+.projetos button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.sociais p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sociais ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sociais ul li {
+    opacity: 0.9;
+    padding: 10px;
+}
+
+.sociais ul li:hover {
+    opacity: 1;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #58555A;
+}
+
+.rodape p {
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px;
+}
+
+
+/* MODAL */
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.formulario .bg-modal {
+    background-color: rgba(0, 0, 0, 0.75) ;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: -100;
+    display: block;
+}
+
+.formulario .bg-modal .modal {
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .formulario .bg-modal .modal {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 850px) {
+    .formulario .bg-modal .modal {
+        width: 85%;
+
+    }
+}
+
+.formulario .bg-modal .modal .close i {
+    float: right;
+    margin: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+.formulario .bg-modal .modal .close i:hover {
+    opacity: 1;
+    transition: 350ms;
+}
+
+/* FORMULARIO */
+
+.formulario .bg-modal .modal input:focus,
+.formulario .bg-modal .modal select:focus,
+.formulario .bg-modal .modal textarea:focus {
+    border: black solid 2px;
+}
+
+.formulario .bg-modal .modal h1 {
+    text-align: center;
+    margin: 10px 40px;
+    font-size: 30px;
+}
+
+.formulario .bg-modal .modal label {
+    font-size: 18px;
+}
+
+.formulario .bg-modal .modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario .bg-modal .modal form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+    border: none;
+}
+
+.formulario .bg-modal .modal form fieldset .info, 
+.formulario .bg-modal .modal form fieldset .contato, 
+.formulario .bg-modal .modal form .perguntas1, 
+.formulario .bg-modal .modal form .perguntas2 {
+    display: flex;
+    width: 60%;
+    align-items: center; 
+}
+
+.formulario .bg-modal .modal form fieldset .info div,
+.formulario .bg-modal .modal form fieldset .contato div,
+.formulario .bg-modal .modal form .perguntas1 div, 
+.formulario .bg-modal .modal form .perguntas2 div,
+.formulario .bg-modal .modal form .arquivo, 
+.formulario .bg-modal .modal form .obs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+}
+
+.formulario .bg-modal .modal form fieldset input,
+.formulario .bg-modal .modal form select {
+    width: 100%;
+}
+
+.formulario .bg-modal .modal form button {
+    background-color: #58555A;
+    color: white;
+    width: 180px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    opacity: 0.9;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+}
+
+.formulario .bg-modal .modal form button:hover {
+    transform: scale(1.1);
+}
